@@ -25,4 +25,13 @@ echo "<br>Запуск скрипта<br>\n";
 require_once __DIR__ . "/Generals/myHelper.php";
 
 $test = new WeatherData();
+echo "<br>weather<br>\n";
+var_dump($test);
+
+$test->notifyObserver();
+
+$test->setMeasurements();
+echo "<br>weather<br>\n";
+var_dump($test);
+
 

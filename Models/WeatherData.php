@@ -118,8 +118,8 @@ class WeatherData implements Subject
             unset($this->arrayList[$key]);
             $this->arrayList = array_values($this->arrayList);
         }
-        echo "<br>arrayList<br>\n";
-        var_dump($this->arrayList);
+        //echo "<br>arrayList<br>\n";
+        //ar_dump($this->arrayList);
     }
 
 
@@ -136,10 +136,36 @@ class WeatherData implements Subject
         }
     }
 
+
     /**
+     * Оповещение наблюдателей о появлении новых данных
      *
+     * @return void
      */
     public function measurementsChanged()
     {
+        $this->notifyObserver();
+    }
+
+
+    /**
+     * Загрузка новых метеоданных (имитатор)
+     *
+     * @param float $temperature текущая температура
+     * @param float $humidity    текущая влажность
+     * @param float $pressure    текущее давление
+     *
+     * @return void
+     */
+    public function setMeasurements(
+        float $temperature = 15.55, 
+        float $humidity    = 80.88, 
+        float $pressure    = 777
+    ) {
+        $this->temperature = $temperature;
+        $this->humidity    = $humidity;
+        $this->pressure    = $pressure;
+
+        $this->measurementsChanged();
     }
 }
