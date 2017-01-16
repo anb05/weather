@@ -9,12 +9,12 @@
  *
  * @package Observer\Contrracts
  *
- * @author A.Bovkun <a.n.bovkun@gmail.com>
+ * @author Anb05 <alexandr05@list.ru>
  *
  * @license http://opensource.org/licenses/gpl-license.php GNU 
  * Public License  GNU Public License
  *
- * @link http://localhost/index.php
+ * @link https://github.com/anb05/weather.git
  */
 
 namespace Observer\Contracts;
@@ -29,12 +29,12 @@ use Observer\Contracts\Observer;
  *
  * @package Observer\Contrracts
  *
- * @author A.Bovkun <a.n.bovkun@gmail.com>
+ * @author Anb05 <alexandr05@list.ru>
  *
  * @license http://opensource.org/licenses/gpl-license.php GNU 
  * Public License  GNU Public License
  *
- * @link http://localhost/index.php
+ * @link https://github.com/anb05/weather.git
  */
 
 

@@ -8,13 +8,13 @@
  *
  * @category Learn
  *
- * @package Duck
+ * @package Observer
  *
- * @author A.Bovkun <a.n.bovkn@gmail.com>
+ * @author Anb05 <alexandr05@list.ru>
  *
  * @license MIT <mit@example.com>
  *
- * @link http://localhos/index.php Изучаем паттерны
+ * @link https://github.com/anb05/weather.git
  */
 
 /**

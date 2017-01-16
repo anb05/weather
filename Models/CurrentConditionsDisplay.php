@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Класс отслеживающий текущие погодные условия.
+ * Класс для вывода текущего сотстояния погоды
  *
- * Класс позволяет отслеживать следующие параметры:
+ * Класс позволяет отображать следующие параметры:
  *     - температуру
  *     - влажность 
  *     - давление
@@ -24,12 +24,12 @@
 
 namespace Observer\Models;
 
-use Observer\Contracts\Subject;
+use Observer\Contracts\DisplayElement;
 use Observer\Contracts\Observer;
 
 
 /**
- * Class WeatherData from pattern Observer
+ * Class CurrentConditionsDisplay from pattern Observer
  *
  * @category Models
  *
