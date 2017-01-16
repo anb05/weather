@@ -17,7 +17,7 @@
  * @link https://github.com/anb05/weather.git
  */
 
-namespace Observer\Contrracts;
+namespace Observer\Contracts;
 
 
 /**

@@ -9,7 +9,7 @@
  *
  * @package Observer
  *
- * @author Anb05 <alexandr05@list.ru>
+ * @author anb05 <alexandr05@list.ru>
  *
  * @license MIT <mit@example.com>
  *
@@ -19,19 +19,16 @@
 //namespace Observer;
 
 use Observer\Models\WeatherData;
+use Observer\Models\CurrentConditionsDisplay;
 
 echo "<br>Запуск скрипта<br>\n";
 
 require_once __DIR__ . "/Generals/myHelper.php";
 
-$test = new WeatherData();
-echo "<br>weather<br>\n";
-var_dump($test);
+$weatherData = new WeatherData();
 
-$test->notifyObserver();
+$currentDisplay = new CurrentConditionsDisplay($weatherData);
 
-$test->setMeasurements();
-echo "<br>weather<br>\n";
-var_dump($test);
-
-
+$weatherData->setMeasurements(21, 65, 777);
+$weatherData->setMeasurements(24, 75, 757);
+$weatherData->setMeasurements(31, 85, 767);
