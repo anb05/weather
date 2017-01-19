@@ -160,7 +160,7 @@ class WeatherData implements Subject
     public function setMeasurements(
         float $temperature = 15.55, 
         float $humidity    = 80.88, 
-        float $pressure    = 777
+        float $pressure    = 777.0
     ) {
         $this->temperature = $temperature;
         $this->humidity    = $humidity;

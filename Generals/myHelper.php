@@ -20,7 +20,7 @@
 /**
  * Автозагрузчик классов
  *
- * @param string $class clss namespace
+ * @param string $class class namespace
  *
  * @return string path to file class
  */
@@ -37,9 +37,8 @@ function autoload($class)
 
     if (is_file($path)) {
         include_once $path;
-    } else {
-        return false;
     }
+    return false;
 }
 
 spl_autoload_register('autoload');
